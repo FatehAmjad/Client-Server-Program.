@@ -1,0 +1,43 @@
+Developed by: Fateh Din Mohammed Amjad.
+GitHub: https://github.com/FatehAmjad
+
+The Readme details and lists how the Client-Server program needs to be run, and what role each file created has to fulfil.
+
+                    --- How to run the Client-Server program ---
+
+The program can be run in the order of the following commands:
+    Make
+    ./Server <Max clients>
+    ./Client <Ip address> <Port number>
+
+Once the connection between the server and client have been established, then you can make use of either commands:
+    Join <nickname> <realname>
+    Whois <nickname>
+    Time
+    Quit
+
+After the program has been successfully compiled and run, its object files created can be deleted by running the following command:
+    make clean
+
+                            --- Files information ---
+
+1. Makefile - This file is used to create and remove all object files, if no errors are found in the .c files.
+Instead of each time, one by one call every file and compile it to be run for the program, Makefile makes it easier to compile all
+files at once, and successfully launch the program.
+
+2. server.c - This .c file contains code which is used for the creating of the server, sockets, connecting to the clients and successfully launching of the Client-Server program after the server has been initialised.
+
+3. server.h - This header file contains the declarations for the functions used in server.c file.
+
+4. client.c - This source file contains functions and commands that is used to create clients, sockets, and connections on the client side of the program.
+
+5. range.h - This header file is used to create macros, whereby are substituted in the source files (server.c or client.c) each time they have been called.
+
+6. text.c - Contains functionality for null terminator and overwriting output when running the Client-Server program.
+
+7. text.h - Contains the declarations for the functions created in text.c file.
+
+
+
+
+
